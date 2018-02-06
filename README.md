@@ -37,7 +37,7 @@ The Simulism CMS is intended to be drag and drop.
 * Router
 * FireBase
 
-## What needs to be done:
+## What needs to be done (not a complete list):
 
 * Settings Page
     1. Admin Settings
