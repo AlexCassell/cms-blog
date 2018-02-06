@@ -1,0 +1,30 @@
+.postWrapper{
+    position: absolute;
+    top: 70px;
+    background-color: white;
+    width: 100%;
+    height: calc(100% - 70px);
+}
+
+.postFormWrapper{
+    position: absolute;
+    top: 100px;;
+    left: calc(50% - 200px);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post__item{
+    border: grey 2px solid;
+}
+
+.post__content{
+    width: 400px;
+    height: 450px;
+}
+
+.post__label{
+    display: flex;
+    flex-direction: column;
+}

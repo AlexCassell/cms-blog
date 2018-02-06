@@ -1,0 +1,61 @@
+.loginWrapper{
+    position: absolute;
+    top:70px;
+    background-color: white;
+    width: 100%;
+    height: calc(100% - 70px);
+}
+
+.login-logout{
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    top: 30%;
+    left: calc(50% - 150px);
+    border: solid black 3px;
+    border-radius: 25px;
+}
+
+h1 {
+    padding: 10px;
+}
+
+.login-logout__button{
+    position: absolute;
+    top: 40%;
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 50px;
+    background-color: #dd4b39;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+
+
+.user-profile{
+    position: absolute;
+    top: 3px;
+    left: 0px;
+}
+
+.profile-image{
+    width: 50px;
+    height: 50px;
+}
+
+.welcome{
+    position: relative;
+    top: 3px;
+    left:2px;
+    color: black;
+    font-size: 2em;
+}
+
+.googleLogin{
+    position: absolute;
+    top: 90px;
+    color: black;
+}
