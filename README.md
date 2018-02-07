@@ -48,8 +48,9 @@ The Simulism CMS is intended to be drag and drop.
     2. Basic Settings
         * Change Display Name
         * Change Email for Alerts
+        * Time Zone
+        * Time Format
         * Toggle Settings
-            * Get Emails from Replies
             * Make Profile Public
         * Change Profile Image
 

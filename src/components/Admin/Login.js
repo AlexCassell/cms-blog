@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // eslint-disable-next-line
 import firebase, { auth, provider } from '../firebase.js';
+import Location from './Location';
 import AdminMenu from './Navigation';
 import './css/login.css';
 
@@ -68,7 +69,6 @@ componentDidMount() {
             email = this.state.user.email;
             displayName = this.state.user.displayName;
             profilePicture = this.state.user.photoURL;
-            console.log(email)
         }
 
 
@@ -85,6 +85,7 @@ componentDidMount() {
                         }
                 </div>
                     <div className="login-logout">
+                    <Location />
                     <h1>Sign in with your Google Account</h1>
                         {this.state.user ?
                             <div>
