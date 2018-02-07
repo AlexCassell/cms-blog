@@ -75,14 +75,15 @@ class Post extends Component {
                         <AdminMenu />
                         <form className="postFormWrapper">
                             <label className="post__label">
-                                Title:
                                 <input className="post__item" type="text" name="title" />
                             </label>
                             <label className="post__label">
-                                Content:
-                                <input className="post__item post__content" type="text" name="content" />
+                                <textarea className="post__item post__content" type="text" name="content" />
                             </label>
-                            <input className="post__button" type="submit" value="Submit" />
+                        </form>
+                        <form className="buttonsWrapper">
+                            <input className="post__button" type="post" value="Post" />
+                            <input className="post__button" type="draft" value="Draft" />
                         </form>
                     </div>
                     :

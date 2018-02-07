@@ -8,10 +8,10 @@
 
 .changeSettingsWrapper{
     position: absolute;
-    top: 100px;
-    left: calc(50% - 200px);
+    top: 15px;
+    left: 11%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .settings_block{
@@ -56,4 +56,23 @@
     margin: 5px;
     font-size: 1em;
     text-align: center;
+}
+
+.profile-image{
+    position: relative;
+    padding-top: 20px;
+    width: 200px;
+    height: 200px;
+    left: calc(50% - 100px);
+}
+
+.settings__item__info__title{
+    padding: 5px;
+}
+
+.settings__item__info{
+    padding-left: 120px;
+    padding-bottom: 5px;
+    font-weight: lighter;
+    text-align: left;
 }

@@ -19,6 +19,10 @@ The Simulism CMS is intended to be drag and drop.
 * Ad placement across entire platform
 * Platform front page with top posts and top blogs
 * Google Analytics support
+* Built in Basic Analytics
+    1. Show Users By Location
+    2. Track Pages Viewed By Each User
+    3. Block IPs and IP Ranges
 * RSS Feeds
 * Administration
     1. Moderate comments
@@ -51,7 +55,8 @@ The Simulism CMS is intended to be drag and drop.
         * Time Zone
         * Time Format
         * Toggle Settings
-            * Make Profile Public
+            * Make Profile Private 
+            * Recieve Emails from Admin
         * Change Profile Image
 
 

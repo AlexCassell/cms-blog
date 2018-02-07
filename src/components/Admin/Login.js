@@ -5,8 +5,8 @@ import Location from './Location';
 import AdminMenu from './Navigation';
 import './css/login.css';
 
-let email = null, displayName, profilePicture;
-
+const websiteOwner = "anniemously00@gmail.com"; //change this to the owner's email address before uploading
+let email = null, displayName, googleProfileImage;
 let role = 1; //1 admin all menus //2 poster //3 reader/commenter //will be saved and loaded by server
 
 class Login extends Component {
@@ -68,7 +68,7 @@ componentDidMount() {
         setUser(){
             email = this.state.user.email;
             displayName = this.state.user.displayName;
-            profilePicture = this.state.user.photoURL;
+            googleProfileImage = this.state.user.photoURL;
         }
 
 
@@ -119,5 +119,5 @@ componentDidMount() {
 export default Login;
 export {email};
 export {displayName};
-export {profilePicture};
 export {role};
+export {googleProfileImage};

@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 let city, state;
 
 const Location = () => {
-    const url = 'https://freegeoip.net/json/';
+    const url = 'https://geo-ip-simulism.herokuapp.com/json/';
     fetch(url)
         .then((response) => response.json())
         .then((responseJson) => {

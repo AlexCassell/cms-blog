@@ -1,0 +1,39 @@
+.adminMenu{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: #4B543B;
+    border-right: solid 5px #719075;
+}
+
+.adminMenu__menu{
+    position: absolute;
+    top: 25px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.adminMenu__menu__links{
+    font-size: 1.5rem;
+    /* align-self: center; */
+    padding: 10px;
+}
+
+.adminMenu__menu a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.adminMenu__menu a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.adminMenu__menu a:hover {
+    text-decoration: underline;
+    color: white;
+}

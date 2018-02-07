@@ -7,12 +7,12 @@ import {city, state} from './Location';
 
 import './css/settings.css';
 
-let userDisplayName;
-let parseLocation;
-
 let userLocation;
 
-let publicProfile = true, adminEmails = true, location = "";
+let publicProfile = true, adminEmails = true, actualLocation = "", anyoneCanRegister = false;
+
+//blog settings
+let blogName = "Simulism Blogger", blogTagLine = "My Place on the Interwebs", dateFormat = "M D, Y", timeFormat = "12:h A";
 
 class Settings extends Component {
     constructor(props) {
@@ -21,6 +21,7 @@ class Settings extends Component {
             'content': '',
             'publicProfile': true,
             'adminEmails': true,
+            'anyoneCanRegister': false,
             'getLocation': <Location />
         };
         this.handleProfileInput = this.handleProfileInput.bind(this);
@@ -41,7 +42,7 @@ class Settings extends Component {
             // console.log("Trying");
         }
         else{
-            userLocation = String(city) + ", " + String(state)
+            actualLocation = String(city) + ", " + String(state)
         }
         
     }
@@ -74,6 +75,14 @@ class Settings extends Component {
         console.log(adminEmails);
     }
 
+    handleRegisterInput(){
+        this.setState({
+            anyoneCanRegister: !this.state.anyoneCanRegister,
+        });
+        anyoneCanRegister = !this.state.anyoneCanRegister;
+        console.log(anyoneCanRegister);
+    }
+
 
 render() {
     return (
@@ -96,18 +105,57 @@ render() {
                             <span className="settings__item__title">Alert Email:</span><input className="settings__form" placeholder={email} type="text" name="displayName" />
                         </form>
                         <form className="settings__item">
-                            <span className="settings__item__title">Location:</span><input className="settings__form" placeholder={userLocation} type="text" name="displayName" />
-                        </form>
-                        <form className="settings__item">
-                            <span className="settings__item__title">Website:</span><input className="settings__form" placeholder="https://alexcassell.com" type="text" name="website" />
-                        </form>
-                        <form className="settings__item">
                             <span className="settings__item__title">Public Profile:</span><input className="settings__checkbox" type="checkbox" onChange={this.handleProfileInput} checked={this.state.publicProfile} name="displayName" />
                             <span className="settings__item__title">Receive Admin Emails:</span><input className="settings__checkbox" type="checkbox" onChange={this.handleAdminEmailInput} checked={this.state.adminEmails} name="displayName" />
                         </form>
                     </div>
                     <div className="settings_block">
-                        words
+                    <div className="settings__title">
+                            Blog Settings
+                        </div>
+                        <form className="settings__item">
+                            <span className="settings__item__title">Blog Name:</span><input className="settings__form" placeholder={blogName} type="text" name="displayName" />
+                        </form>
+                        <form className="settings__item">
+                            <span className="settings__item__title">Blog Tag Line:</span><input className="settings__form" placeholder={blogTagLine} type="text" name="displayName" />
+                        </form>
+                            <div>
+                                <div className="settings__item__info__title">
+                                    Date Templates:
+                                </div>
+                                <div className="settings__item__info">
+                                    M D, Y = January 01, 2018
+                                </div>
+                                <div className="settings__item__info">                                
+                                    M/D/Y = 01/01/2018
+                                </div>
+                                <div className="settings__item__info">
+                                    M-D-Y = 01-01-2018
+                                </div>
+                            </div>
+                        <form className="settings__item">
+                            <span className="settings__item__title">Date Format:</span><input className="settings__form" placeholder={dateFormat} type="text" name="displayName" />
+                        </form>
+                        <div>
+                            <div className="settings__item__info__title">
+                                Time Templates:
+                            </div>
+                            <div className="settings__item__info">
+                                12:h A = 1:30 AM
+                            </div>
+                            <div className="settings__item__info">                                
+                                12: a = 1 pm
+                            </div>
+                            <div className="settings__item__info">
+                                24:h = 13:30
+                            </div>
+                        </div>
+                        <form className="settings__item">
+                            <span className="settings__item__title">Time Format:</span><input className="settings__form" placeholder={timeFormat} type="text" name="displayName" />
+                        </form>
+                        <form className="settings__item">
+                            <span className="settings__item__title">Anyone Can Register to Comment:</span><input className="settings__checkbox" type="checkbox" onChange={this.handleRegisterInput} checked={this.state.anyoneCanRegister} name="displayName" />
+                        </form>
                     </div>
                 </div>
             </div>
