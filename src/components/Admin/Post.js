@@ -78,7 +78,18 @@ class Post extends Component {
                                 <input className="post__item" type="text" name="title" />
                             </label>
                             <label className="post__label">
+                                <div className="insertHTML">
+                                    <button className="insertHTML__buttons">Bold</button>
+                                    <button className="insertHTML__buttons">Italics</button>
+                                    <button className="insertHTML__buttons">Underline</button>
+                                    <button className="insertHTML__buttons">Image</button>
+                                    <button className="insertHTML__buttons">Link</button>
+                                    <button className="insertHTML__buttons">Blockquote</button>
+                                    <button className="insertHTML__buttons">ul</button>
+                                    <button className="insertHTML__buttons">li</button>
+                                </div>
                                 <textarea className="post__item post__content" type="text" name="content" />
+                                <div className="content_info">Word Count: 100</div>
                             </label>
                         </form>
                         <form className="buttonsWrapper">

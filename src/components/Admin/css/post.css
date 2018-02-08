@@ -18,13 +18,39 @@
 .post__item{
     height: 50px;
     font-size: 2rem;
-    border: grey 2px solid;
+    border: lightgrey 2px solid;
 }
 
 .post__content{
     width: 100%;
     height: 450px;
     resize: none;    
+}
+.content_info{
+    width: calc(100% - 10px);
+    border: lightgrey 2px solid;
+    height: 25px;
+    background-color: lightgrey;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.insertHTML{
+    width: calc(100% - 10px);
+    border: lightgrey 2px solid;
+    height: 30px;
+    background-color: lightgrey;
+    padding-top: 5px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.insertHTML__buttons{
+    border-radius: 25px;
+    padding: 3px;
+    color: white;
+    border: white 2px solid;
+    background-color: grey;
 }
 
 
@@ -41,7 +67,10 @@
     font-size: 2rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: center;
     width: 12%;
+    border: 2px solid lightgrey;
 }
 
 .post__button{
@@ -49,4 +78,8 @@
     border: 2px solid lightgrey;
     padding: 15px;
     text-align: center;
+    width: 70%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }

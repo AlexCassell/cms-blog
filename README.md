@@ -59,6 +59,22 @@ The Simulism CMS is intended to be drag and drop.
             * Recieve Emails from Admin
         * Change Profile Image
 
+* Post Page
+    1. Set as Post or Draft
+    2. Insert HTML Tags
+        * Bold
+        * Italics
+        * Underline
+        * Image
+        * Link
+        * ul
+        * li
+        * blockquote
+    3. Edit URL for Post
+    4. Show Post Info
+        * Word Count
+
+
 
 
 

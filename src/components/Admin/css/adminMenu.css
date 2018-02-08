@@ -1,8 +1,8 @@
 .adminMenu{
-    position: absolute;
+    position: fixed;
     width: 10%;
     height: 100%;
-    top: 0px;
+    top: 10px;
     left: 0px;
     background-color: #4B543B;
     border-right: solid 5px #719075;
