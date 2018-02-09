@@ -43,6 +43,8 @@ The Simulism CMS is intended to be drag and drop.
 
 ## What needs to be done (not a complete list):
 
+~~Means fully implemented~~
+
 * Settings Page
     1. Admin Settings
         * Change Sites Appearance
@@ -62,17 +64,22 @@ The Simulism CMS is intended to be drag and drop.
 * Post Page
     1. Set as Post or Draft
     2. Insert HTML Tags
-        * Bold
-        * Italics
-        * Underline
+        * ~~h1~~
+        * ~~h2~~
+        * ~~h3~~
+        * ~~Bold~~
+        * ~~Italics~~
+        * ~~Underline~~
         * Image
-        * Link
-        * ul
-        * li
-        * blockquote
+        * ~~Link~~
+        * ~~ul~~
+        * ~~li~~
+        * ~~Line Break~~
+        * ~~Blockquote~~
     3. Edit URL for Post
     4. Show Post Info
         * Word Count
+    5. Preview Page
 
 
 

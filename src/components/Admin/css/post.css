@@ -46,11 +46,44 @@
     justify-content: space-around;
 }
 .insertHTML__buttons{
+    cursor: pointer;
     border-radius: 25px;
     padding: 3px;
     color: white;
     border: white 2px solid;
     background-color: grey;
+}
+
+.HTMLTagPopUp{
+    position: absolute;
+    font-weight: bold;
+    top: 120px;
+    left: calc(50% - 230px);
+    padding: 15px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    z-index: 15;
+    background-color: white;
+    border: lightgrey 3px solid;
+}
+
+.popUpItem{
+    margin-top: 15px;
+}
+
+.popUp__input{
+    height: 50px;
+    font-size: 2rem;
+    border: lightgrey 2px solid;
+}
+
+.insertButton{
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 3px lightgrey solid;
 }
 
 
@@ -74,6 +107,7 @@
 }
 
 .post__button{
+    cursor: pointer;
     margin-bottom: 10px;
     border: 2px solid lightgrey;
     padding: 15px;

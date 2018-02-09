@@ -17,21 +17,12 @@ class PostProfile extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            'content': '',
-            'publicProfile': true,
-            'adminEmails': true,
-            'getLocation': <Location />
+            'content': ''
         };
-        this.handleProfileInput = this.handleProfileInput.bind(this);
-        this.handleAdminEmailInput = this.handleAdminEmailInput.bind(this);
+
 }
 
     componentWillMount(){
-        this.setState({
-            'getLocation': <Location />
-        });
-        this.getLocation();
-        // console.log(Location);
     }
 
     getLocation(){

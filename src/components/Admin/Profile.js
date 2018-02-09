@@ -37,7 +37,7 @@ class Profile extends Component {
     getLocation(){
         if(city === undefined){
             setTimeout(this.getLocation.bind(this), 200);
-            // console.log("Trying");
+            // keeps trying in case there is lag or heroku is asleep
         }
         else{
             actualLocation = String(city) + ", " + String(state)
@@ -92,7 +92,7 @@ render() {
                             <span className="settings__item__title">Location:</span><input className="settings__form" placeholder={actualLocation} type="text" name="displayName" />
                         </form>
                         <form className="settings__item">
-                            <span className="settings__item__title">Website:</span><input className="settings__form" placeholder="https://alexcassell.com" type="text" name="website" />
+                            <span className="settings__item__title">Website:</span><input className="settings__form" placeholder={window.location.hostname} type="text" name="website" />
                         </form>
                         <form className="settings__item">
                             <span className="settings__item__title">Facebook:</span><input className="settings__form" placeholder="User Name" type="text" name="website" />

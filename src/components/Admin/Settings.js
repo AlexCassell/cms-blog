@@ -84,7 +84,7 @@ class Settings extends Component {
         console.log(anyoneCanRegister);
     }
 
-
+//add setting for location tag per post
 render() {
     return (
     <div className="settingsWrapper">
