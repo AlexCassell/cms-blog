@@ -23,6 +23,8 @@ let boldOpen = false, italicsOpen = false, underlineOpen = false, indentOpen = f
 
 let insertLink = "", insertLinkText = "";
 
+let tags = [];
+
 class Post extends Component {
     constructor(props) {
     super(props);
@@ -269,6 +271,11 @@ class Post extends Component {
         }
     }
 
+    //post tags
+    handlePostTags(e){
+
+    }
+
 
     render() {
         return (
@@ -305,7 +312,13 @@ class Post extends Component {
                             <input className="post__button" type="post" defaultValue="Post" />
                             <input className="post__button" type="draft" defaultValue="Draft" />
                         </form>
+                        <form className="tagWrapper">
+                            <div>Post Tags</div>
+                            <input className="tagInput" type="text" name="tags" onChange={ (e) => this.handlePostTags(e)} />
+                            <button className="tagButton" name="tags" onClick={(e) => this.handlePostTags(e)}>Add Tag</button>
+                        </form>
                     </div>
+
                     :
                     this.props.history.push('/')       
                 }

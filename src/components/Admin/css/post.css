@@ -29,10 +29,11 @@
 .content_info{
     width: calc(100% - 10px);
     border: lightgrey 2px solid;
-    height: 25px;
+    height: auto;
     background-color: lightgrey;
     padding-top: 5px;
     padding-left: 10px;
+    padding-bottom: 5px;
 }
 .insertHTML{
     width: calc(100% - 10px);
@@ -116,4 +117,37 @@
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* post tags */
+
+.tagWrapper{
+    position: absolute;
+    right:1%;
+    top: 300px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: calc(12% - 10px);
+    border: 2px solid lightgrey;
+    padding: 5px;
+}
+
+.tagInput{
+    align-self: center;
+    height: 30px;
+    width: 80%;
+    margin-bottom: 5px;
+    font-size: 2rem;
+    border: lightgrey 2px solid;
+}
+
+.tagButton{
+    font-size: .8em;
+    align-self: center;
+    border: lightgrey 2px solid;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 125px;
 }
