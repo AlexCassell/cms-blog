@@ -5,6 +5,7 @@ import Contact from './Contact';
 import Login from './Admin/Login';
 import Profile from './Admin/Profile';
 import Post from './Admin/Post';
+import PostPreview from './Admin/PostPreview';
 
 
 export { 
@@ -14,5 +15,6 @@ export {
   Contact,
   Login,
   Profile,
-  Post
+  Post,
+  PostPreview
 };

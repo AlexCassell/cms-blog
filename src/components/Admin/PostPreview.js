@@ -13,7 +13,7 @@ let userLocation;
 
 let publicProfile = true, adminEmails = true, actualLocation = "";
 
-class Profile extends Component {
+class PostProfile extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -115,4 +115,4 @@ render() {
         );
     }
 }
-export default Profile;
+export default PostProfile;

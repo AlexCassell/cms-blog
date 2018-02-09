@@ -1,4 +1,4 @@
-// eslint-disable-next-line
+/*eslint no-unused-vars: "off"*/
 import React, { Component } from 'react';
 import AdminMenu from './Navigation';
 import {email, displayName} from './Login';
@@ -13,6 +13,7 @@ let publicProfile = true, adminEmails = true, actualLocation = "", anyoneCanRegi
 
 //blog settings
 let blogName = "Simulism Blogger", blogTagLine = "My Place on the Interwebs", dateFormat = "M D, Y", timeFormat = "12:h A";
+let useAnalytics = true;
 
 class Settings extends Component {
     constructor(props) {
@@ -30,7 +31,7 @@ class Settings extends Component {
 
     componentWillMount(){
         this.setState({
-            'getLocation': <Location />
+            getLocation: <Location />            
         });
         this.getLocation();
         // console.log(Location);
@@ -165,3 +166,4 @@ render() {
     }
 }
 export default Settings;
+export {useAnalytics};

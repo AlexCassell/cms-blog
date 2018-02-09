@@ -22,6 +22,7 @@ const App = () => (
     <Route path="/admin/login/" component={ Login }/>
     <Route path="/admin/profile/" component={ Profile }/>
     <Route path="/admin/post/" component={ Post }/>
+    <Route path="/admin/post/preview" component={ Post }/>
     <Route path="/admin/settings/" component={ Settings }/>
     <Route path="/admin/moderate/" component={ Moderate }/>
   </div>

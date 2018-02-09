@@ -1,3 +1,4 @@
+/*eslint no-unused-vars: "off"*/
 import React, { Component } from 'react';
 // eslint-disable-next-line
 import firebase, { auth, provider } from '../firebase.js';

@@ -16,11 +16,11 @@ class AdminMenu extends Component {
 }
 
     componentWillMount(){
-        
+        this.setMenuByRole();
     }
 
     componentDidMount(){
-        this.setMenuByRole();
+        
     }
 
     setMenuByRole(){
