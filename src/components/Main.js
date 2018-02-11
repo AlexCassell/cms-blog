@@ -1,7 +1,7 @@
 // eslint-disable-next-line
 import React, { Component } from 'react';
 import '../css/home.css';
-
+import Location from './Admin/Location';
 import {email} from './Admin/Login'
 
 // componentDidMount() {
@@ -20,17 +20,24 @@ class Main extends Component {
     constructor() {
         super();
         this.state = {
-            content: '',
+            "content": '',
+            "getLocation": ''
         };
 }
 
     componentWillMount(){
         this.loggedIn();
+        this.setState({
+            'getLocation': <Location />
+        });
     }
 
     componentDidMount(){
         this.loggedIn();
     }
+
+
+
 
     loggedIn(){
         email === null ?

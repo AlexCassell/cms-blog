@@ -23,7 +23,8 @@ let boldOpen = false, italicsOpen = false, underlineOpen = false, indentOpen = f
 
 let insertLink = "", insertLinkText = "";
 
-let tags = [];
+
+let tags = [], tagHolder = "";
 
 class Post extends Component {
     constructor(props) {
@@ -33,7 +34,9 @@ class Post extends Component {
         'postUrl': '',
         'postBody':'',
         'postTitle':'',
-        'insert':''
+        'postTags': '',
+        'insert':'',
+        'tagHolder':''
     };
     this.savePost = this.savePost.bind(this);
 }
@@ -273,7 +276,20 @@ class Post extends Component {
 
     //post tags
     handlePostTags(e){
+        console.log("fired");
+        e.preventDefault();
+        tags.push(tagHolder);
+        tagHolder = "";
+        this.setState({postTags:tags});
+        this.setState({tagHolder:''});
+        console.log(tags); 
+        console.log(this.state.postTags); 
+    }
 
+    tempSaveTags(e){
+        tagHolder = e.target.value;
+        this.setState({tagHolder:tagHolder});
+        console.log(tagHolder);
     }
 
 
@@ -305,7 +321,10 @@ class Post extends Component {
                                     <button className="insertHTML__buttons"name="listItem" onClick={(e) => this.handleHTMLTag(e)}>li</button>
                                 </div>
                                 <textarea ref="post" className="post__item post__content" type="text" name="content" value={this.state.postBody}  onChange={ (e) => this.handlePostInput(e) }/>
-                                <div className="content_info">Word Count: 100</div>
+                                <div className="content__infoWrapper">
+                                    <div className="content_info">Word Count: 100</div>
+                                    <div className="content_info">Tags: {tags}</div>                                    
+                                </div>
                             </div>
                         </form>
                         <form className="buttonsWrapper">
@@ -314,7 +333,7 @@ class Post extends Component {
                         </form>
                         <form className="tagWrapper">
                             <div>Post Tags</div>
-                            <input className="tagInput" type="text" name="tags" onChange={ (e) => this.handlePostTags(e)} />
+                            <input className="tagInput" type="text" name="tags" value={this.state.tagHolder} onChange={ (e) => this.tempSaveTags(e)} />
                             <button className="tagButton" name="tags" onClick={(e) => this.handlePostTags(e)}>Add Tag</button>
                         </form>
                     </div>

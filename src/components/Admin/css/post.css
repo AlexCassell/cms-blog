@@ -26,15 +26,7 @@
     height: 450px;
     resize: none;    
 }
-.content_info{
-    width: calc(100% - 10px);
-    border: lightgrey 2px solid;
-    height: auto;
-    background-color: lightgrey;
-    padding-top: 5px;
-    padding-left: 10px;
-    padding-bottom: 5px;
-}
+
 .insertHTML{
     width: calc(100% - 10px);
     border: lightgrey 2px solid;
@@ -144,10 +136,31 @@
 }
 
 .tagButton{
+    cursor: pointer;
     font-size: .8em;
     align-self: center;
     border: lightgrey 2px solid;
     margin-bottom: 5px;
     padding: 5px;
     width: 125px;
+}
+
+/* post content info */
+
+.content__infoWrapper{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border: lightgrey 2px solid;
+}
+
+.content_info{
+    width: calc(100% - 10px);
+    height: auto;
+    background-color: lightgrey;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
 }
